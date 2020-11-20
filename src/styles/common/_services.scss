@@ -1,0 +1,117 @@
+.services {
+    margin-top: 100px;
+
+    // .services__body
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    // .services__info
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    // .services__title
+
+    &__title {
+        font-family: $montserrat;
+        font-size: 36px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    &__description{
+        font-family: $montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+        margin-top: 24px;
+        max-width: 668px;
+        line-height: 24.54px;
+    }
+
+
+    // .services__gallery
+
+    &__gallery {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 48px;
+    }
+
+    // .services__services
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 30px rgba(207, 207, 207, 0.25);
+        border-radius: 2px;
+        border: 1px solid rgba(0, 0, 0, 0.04);
+        background-color: #ffffff;
+    }
+
+    // .services__picture
+
+    &__picture {
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    // .services__item-decription
+
+    &__item-decription {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+        height: 219px;
+    }
+
+    // .services__subtitle
+
+    &__subtitle {
+        font-family: $montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: left;
+        margin-top: 40px;
+    }
+
+    // .services__list
+
+    &__list {
+        margin-top: 24px;
+        li{
+            font-family: $montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: left;
+            margin-bottom: 8px;
+        }
+    }
+
+    // .services__decription
+
+}
+
+@media (max-width: 767px){
+    .services {
+        &__gallery {
+            display: flex;
+            flex-direction: column;
+        }
+        &__item {
+            margin-bottom: 15px;
+        }
+
+    }
+}

@@ -1,0 +1,38 @@
+@import 'common/reset';
+@import 'common/header';
+@import 'common/marketing';
+@import 'common/services';
+@import 'common/fonts';
+@import 'common/variables';
+
+
+#visuallyhidden{
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+}
+
+.container{
+    max-width: 1296px;
+        width: 100%;
+        margin: 0 auto;
+}
+
+
+#main{
+    padding: 70px 10px 0 10px;
+}
+
+@media (max-width: 767px){
+    #main{
+        padding: 55px 10px 0 10px;
+    }
+}
+
+
+

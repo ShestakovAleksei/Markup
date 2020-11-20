@@ -1,0 +1,97 @@
+.marketing {
+
+    // .marketing__body
+
+    &__body {
+        display: flex;
+    }
+
+    // .marketing__info
+
+    &__info {
+        display: flex;
+        flex-flow: column;
+    }
+
+    // .marketing__title
+
+    &__title {
+        font-family: $montserrat;
+        font-size: 72px;
+        font-weight: 700;
+        text-align: left;
+        text-transform: capitalize;
+        margin-top: 73px;
+        text-align: left;
+        max-width: 382px;
+    }
+
+    // .marketing__subtitle
+
+    &__subtitle {
+        font-family: $montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        text-align: left;
+        text-transform: capitalize;
+        margin-top: 16px;
+    }
+
+    // .marketing__description
+
+    &__description {
+        font-family: $montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+        margin-top: 40px;
+        max-width: 383px;
+        line-height: 24.54px;
+    }
+
+    // .marketing__button
+
+    &__button {
+        font-family: $montserrat;
+        font-size: 16px;
+        font-weight: 700;
+        width: 161px;
+        height: 46px;
+        border-radius: 3px;
+        border: 2px solid #ff699f;
+        margin-top: 40px;
+        color:  #ff699f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            color: #fff;
+            background-color:  #ff699f;
+            transition: all .3s ease 0s;
+        }
+    }
+
+    // .marketing__picture
+
+    &__picture {
+        margin-left: auto;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (max-width: 767px){
+        .marketing {
+        
+            &__body {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            &__info{
+                margin-top: -20px;
+            }
+        }    
+    }
+}
+
