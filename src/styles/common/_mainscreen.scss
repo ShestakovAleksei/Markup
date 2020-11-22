@@ -47,6 +47,9 @@
         margin-top: 40px;
         max-width: 383px;
         line-height: 24.54px;
+        &::first-letter{
+            text-transform: uppercase;
+        }
     }
 
     // .marketing__button

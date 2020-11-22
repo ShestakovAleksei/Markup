@@ -34,7 +34,11 @@
         text-align: left;
         margin-top: 24px;
         max-width: 668px;
+        width: 100%;
         line-height: 24.54px;
+        &::first-letter{
+            text-transform: uppercase;
+        }
     }
 
 
@@ -44,7 +48,8 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
-        margin-top: 48px;
+        margin-top: 31px;
+        flex-wrap: wrap;
     }
 
     // .services__services
@@ -56,6 +61,7 @@
         border-radius: 2px;
         border: 1px solid rgba(0, 0, 0, 0.04);
         background-color: #ffffff;
+        margin-top: 17px;
     }
 
     // .services__picture
@@ -84,6 +90,7 @@
         font-weight: 700;
         text-align: left;
         margin-top: 40px;
+        text-transform: capitalize;
     }
 
     // .services__list
@@ -96,6 +103,7 @@
             font-weight: 400;
             text-align: left;
             margin-bottom: 8px;
+            text-transform: capitalize;
         }
     }
 

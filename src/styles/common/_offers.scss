@@ -1,0 +1,185 @@
+@import 'variables';
+@import 'icons';
+.offers {
+
+    // .offers__body
+
+    &__body {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    & .info {
+
+        // .info__title
+    
+        &__title {
+            font-family: $montserrat;
+            color: $title-color;
+            font-size: 36px;
+            font-weight: 700;
+            text-align: left;
+            &::first-letter{
+                text-transform: uppercase;
+            }
+        }
+    
+        // .info__description
+    
+        &__description {
+            font-family: $montserrat;
+            color: $description-color;
+            font-size: 16px;
+            font-weight: 400;
+            max-width: 668px;
+            width: 100%;
+            margin-top: 24px;
+            &::first-letter{
+                text-transform: uppercase;
+            }
+        }
+    }
+    .gallery {
+        display: grid;
+        align-items: center;
+        justify-content: space-between;
+        align-content: space-between;
+        grid-auto-flow: row;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 50% 50%;
+        max-width: 1230px;
+        width: 100%;
+        margin-top: 50px;
+
+        // .gallery__item
+    
+        &__item {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            width: 190px;
+            min-height: 156px;
+            margin-top: 51px;
+        }
+
+        .icon{
+            position: relative;
+            &::before{
+                position: absolute;
+                color:$icons-color;
+                font-family: "icons";
+                transform: translate3d(-50%, -50%, 0);
+            }
+        }
+    
+        // .gallery__icon-1
+    
+        &__icon-1 {
+            &::before{
+                content: "\E008";
+                font-size: 92px;
+                transform: translateY(-50%);
+
+            }
+        }
+    
+        // .gallery__description
+    
+        &__description {
+            font-family: $montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+            margin-top: 70px;
+            &::first-letter{
+                text-transform: uppercase;
+            }
+        }
+    
+        // .gallery__icon-2
+    
+        &__icon-2 {
+            &::before{
+                content: "\E002";
+                font-size: 73px;
+            }
+        }
+    
+        // .gallery__icon-3
+    
+        &__icon-3 {
+            &::before{
+                content: "\E001";
+                font-size: 84px;
+            }
+        }
+    
+        // .gallery__icon-4
+    
+        &__icon-4 {
+            &::before{
+                content: "\E004";
+                font-size: 82px;
+            }
+        }
+    
+        // .gallery__icon-5
+    
+        &__icon-5 {
+            &::before{
+                content: "\E006";
+                font-size: 66px;
+            }
+        }
+    
+        // .gallery__icon-6
+    
+        &__icon-6 {
+            &::before{
+                content: "\E003";
+                font-size: 94px;
+            }
+        }
+    
+        // .gallery__icon-7
+    
+        &__icon-7 {
+            &::before{
+                content: "\E005";
+                font-size: 70px;
+            }
+        }
+    
+        // .gallery__icon-8
+    
+        &__icon-8 {
+            &::before{
+                content: "\E007";
+                font-size: 92px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .offers {
+        &__body {
+            margin-top: 59px;
+            .gallery {
+                // display: flex;
+                // flex-flow: row wrap;
+                // align-content: space-between;
+                // justify-content: space-between;
+                grid-template-rows: 25% 25% 25% 25%;
+                grid-template-columns: 50% 50%;
+                margin-top: 32px;
+                &__item{
+                    width: 170px;
+                }
+            }
+        }
+
+        
+    }
+
+}

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Wedding Dance</title>
-  <meta name="description" content="Wedding">
+  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -16,34 +16,31 @@
     <header id="header" class="header">
     <div class="container">
         <div class="header__body">
-            <a href="#" class="header__logo">
+            <a href="#" class="logo">
                 Wedding Dance
             </a>
             <div class="header__burger">
                 <span></span>
             </div>
-            <nav class="header__menu">
-                <div class="header__menu-title">
+            <nav class="menu">
+                <div class="menu__title">
                     Menu
                 </div>
-                <div class="header__menu-print">
-                    menu
-                </div>
-                <ul class="header__list">
+                <ul class="list">
                     <li>
-                        <a href="#" class="header__link">services</a>
+                        <a href="#" class="list__link">services</a>
                     </li>
                     <li>
-                        <a href="#" class="header__link">Our Coaches</a>
+                        <a href="#" class="list__link">Our Coaches</a>
                     </li>
                     <li>
-                        <a href="#" class="header__link">Testimonials</a>
+                        <a href="#" class="list__link">Testimonials</a>
                     </li>
                     <li>
-                        <a href="#" class="header__link">FAQ</a>
+                        <a href="#" class="list__link">FAQ</a>
                     </li>
                     <li>
-                        <a href="#" class="header__link">Lesson Review</a>
+                        <a href="#" class="list__link">Lesson Review</a>
                     </li>
                 </ul>
                 <div class="header__mob-button">
@@ -51,6 +48,9 @@
                 </div>
                 <div class="header__button">
                    <a href="#">Start</a> 
+                </div>
+                <div class="menu__print">
+                    menu
                 </div>
             </nav>
         </div>
@@ -60,6 +60,12 @@
 
 </header>
 <!-- /#header.header -->
+
+                        
+                        
+                        
+                        
+                        
 
     <main id="main" class="main">
       <section class="marketing">
@@ -86,9 +92,21 @@
         <div class="services__body">
             <div class="services__info">
                 <h2 class="services__title">Our Services</h2>
-                <div class="services__description">We want to make your wedding day perfect that is why suggest a lot of options for dance: not only for a bride and groom but for their friends and relatives</div>
+                <div class="services__description">we want to make your wedding day perfect that is why suggest a lot of options for dance: not only for a bride and groom but for their friends and relatives</div>
             </div>
             <div class="services__gallery">
+                <div class="services__item">
+                    <div class="services__picture">
+                        <img src="img/galimg1.jpg" alt="1">
+                    </div>
+                    <div class="services__item-decription">
+                        <h3 class="services__subtitle">For Bride and Groom</h3>
+                        <ul class="services__list">
+                            <li>First Dance</li>
+                            <li>Parent & Child Dance</li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="services__item">
                     <div class="services__picture">
                         <img src="img/galimg1.jpg" alt="1">
@@ -122,8 +140,78 @@
                         <h3 class="services__subtitle">Other events</h3>
                         <ul class="services__list">
                             <li>Bridal Party Dance</li>
-                            <li>Bridal Party Dance</li>
+                            <li>Anniversary dance</li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+      <section class="offers">
+    <div class="container">
+        <div class="offers__body">
+            <div class="info">
+                <h2 class="info__title">What we offer</h2>
+                <div class="info__description">Our goal is not only to teach you how to dance but also give the best unforgettable memories about preparing to your event</div>
+            </div>
+            <div class="gallery">
+                <div class="gallery__item">
+                    <div class="gallery__icon-1 icon"></div>
+                    <div class="gallery__description">
+                        Talented Coaches
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <div class="gallery__icon-2 icon"></div>
+                    <div class="gallery__description">
+                        Cozy rooms for training
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <div class="gallery__icon-3 icon"></div>
+                    <div class="gallery__description">
+                        Coffee, tea, and cookies
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <div class="gallery__icon-4 icon"></div>
+                    <div class="gallery__description">
+                        Good physical form
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <div class="gallery__icon-5 icon"></div>
+                    <div class="gallery__description">
+                        Self Confidence and success on your event
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <div class="gallery__icon-6 icon"></div>
+                    <div class="gallery__description">
+                        Exciting emotions
+                        and a lot of fun
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <div class="gallery__icon-7 icon"></div>
+                    <div class="gallery__description">
+                        Great photos from 
+                        your event
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <div class="gallery__icon-8 icon"></div>
+                    <div class="gallery__description">
+                        Spend hours together 
+                        in happiness
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <div class="gallery__icon-8 icon"></div>
+                    <div class="gallery__description">
+                        Spend hours together 
+                        in happiness
                     </div>
                 </div>
             </div>
@@ -132,6 +220,11 @@
 </section>
     </main>
     <!-- /#main.main -->
+
+
+  <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.13'><\/script>".replace("HOST", location.hostname));
+  //]]></script>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 

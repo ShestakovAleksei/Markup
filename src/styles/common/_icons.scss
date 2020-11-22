@@ -1,0 +1,54 @@
+@font-face {
+	font-family: "icons";
+	src: url('../fonts/icons.eot');
+	src: url('../fonts/icons.eot?#iefix') format('eot'),
+		url('../fonts/icons.woff2') format('woff2'),
+		url('../fonts/icons.woff') format('woff'),
+		url('../fonts/icons.ttf') format('truetype'),
+		url('../fonts/icons.svg#icons') format('svg');
+}
+
+.icon:before {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-Coffee,_tea,_and_cookies:before {
+	content: "\E001";
+}
+
+.icon-Cozy_rooms_for_training:before {
+	content: "\E002";
+}
+
+.icon-Exciting_emotions_and_a_lot_of_fun:before {
+	content: "\E003";
+}
+
+.icon-Good_physical_form:before {
+	content: "\E004";
+}
+
+.icon-Great_photos_from__your_event:before {
+	content: "\E005";
+}
+
+.icon-Self_Confidence_and_success_on_your_event:before {
+	content: "\E006";
+}
+
+.icon-Spend_hours_together__in_happiness:before {
+	content: "\E007";
+}
+
+.icon-Talented_Coaches:before {
+	content: "\E008";
+}

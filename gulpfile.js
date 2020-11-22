@@ -91,8 +91,8 @@ const fontName = 'icons';
 gulp.task('icon', async function() {
             gulp.src('src/assets/icons/*.svg')
             .pipe(iconfontCss({
-                targetPath  : '../../styles/common/_icons.scss',
-                fontPath    : 'src/assets/fonts/',
+                targetPath  : '../../src/styles/common/_icons.scss',
+                fontPath    : '../fonts/',
                 fontName    : fontName
             }))
             .pipe(iconfont({
@@ -101,7 +101,7 @@ gulp.task('icon', async function() {
                 normalize   : true,
                 fontHeight  : 1001
             }))
-            .pipe(gulp.dest('src/assets/fonts/'));
+            .pipe(gulp.dest('build/fonts/'));
 });
 
 gulp.task('fonts', async function() {
