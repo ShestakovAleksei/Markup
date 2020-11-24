@@ -121,17 +121,7 @@
     // .menu__print
 
     &__print {
-        font-family: "Montserrat", sans-serif;
-        color: $menu-print-color;
         display: none;
-        font-size: $menu-print-f-size;
-        transform: rotate(90deg);
-        font-weight: $menu-print-f-weight;
-        text-transform: capitalize;
-        position: absolute;
-        left: -130px;
-        letter-spacing: 20px;
-        top: 271px;
     }
 }
 

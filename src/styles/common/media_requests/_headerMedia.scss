@@ -2,6 +2,11 @@
 @import '../variables';
 
 @media screen and (max-width: 767px) {
+    //variables
+    $menu-links-f-size: 24px;
+    $menu-links-f-l-height: 24.54px;
+    $menu-links-f-weight: 700;
+
     .header {
         width: 95%;
 
@@ -111,6 +116,16 @@
         &__print {
             &--active {
                 display: block;
+                font-family: "Montserrat", sans-serif;
+            color: $menu-print-color;
+            font-size: $menu-print-f-size;
+            transform: rotate(90deg);
+            font-weight: $menu-print-f-weight;
+            text-transform: capitalize;
+            position: absolute;
+            left: -130px;
+            letter-spacing: 20px;
+            top: 271px;
             }
         }
     }
@@ -127,8 +142,8 @@
 
         &__link {
             font-family: $montserrat;
-            font-size: 24px;
-            font-weight: 700;
+            font-size: $menu-links-f-size;
+            font-weight: $menu-links-f-weight;
         }
 
     }

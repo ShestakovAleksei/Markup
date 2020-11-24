@@ -622,18 +622,7 @@ textarea {
 }
 
 .menu__print {
-  font-family: "Montserrat", sans-serif;
-  color: #fef2f6;
   display: none;
-  font-size: 250px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  font-weight: 900;
-  text-transform: capitalize;
-  position: absolute;
-  left: -130px;
-  letter-spacing: 20px;
-  top: 271px;
 }
 
 .list {
@@ -1312,6 +1301,17 @@ _and_cookies:before {
 
   .menu__print--active {
     display: block;
+    font-family: "Montserrat", sans-serif;
+    color: #fef2f6;
+    font-size: 250px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    font-weight: 900;
+    text-transform: capitalize;
+    position: absolute;
+    left: -130px;
+    letter-spacing: 20px;
+    top: 271px;
   }
 
   .list {
