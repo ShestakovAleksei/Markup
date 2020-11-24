@@ -1141,6 +1141,11 @@ _and_cookies:before {
   padding: 70px 10px 0 10px;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 @media screen and (max-width: 1024px) {
   .header__body {
     height: 40px;
@@ -1235,7 +1240,7 @@ _and_cookies:before {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 93.6%;
+    min-height: 100vh;
   }
 
   .menu--active::before {
@@ -1267,7 +1272,6 @@ _and_cookies:before {
   }
 
   .list li {
-    padding: 0 0 20px 0px;
     margin-top: 40px;
   }
 
@@ -1283,10 +1287,6 @@ _and_cookies:before {
 }
 
 @media screen and (max-width: 768px) {
-  .menu--active {
-    height: 95.5%;
-  }
-
   .menu--active::after {
     display: block;
     font-size: 420px;
@@ -1345,10 +1345,6 @@ _and_cookies:before {
 }
 
 @media screen and (max-width: 576px) {
-  .menu--active {
-    height: 93%;
-  }
-
   .menu--active::after {
     display: block;
     font-size: 270px;
@@ -1358,10 +1354,6 @@ _and_cookies:before {
 }
 
 @media screen and (max-width: 425px) {
-  .menu--active {
-    height: 93.2%;
-  }
-
   .menu--active::after {
     display: block;
     font-size: 280px;
@@ -1371,10 +1363,6 @@ _and_cookies:before {
 }
 
 @media screen and (max-width: 375px) {
-  .menu--active {
-    height: 92.5%;
-  }
-
   .menu--active::after {
     display: block;
     font-size: 255px;
@@ -1384,10 +1372,6 @@ _and_cookies:before {
 }
 
 @media screen and (max-width: 320px) {
-  .menu--active {
-    height: 92.1%;
-  }
-
   .menu--active::after {
     display: block;
     font-size: 241px;
@@ -1400,13 +1384,18 @@ _and_cookies:before {
   }
 }
 
+@media screen and (height: 812px) {
+  .menu--active::after {
+    display: block;
+    font-size: 307px;
+    left: -126px;
+    top: 248px;
+  }
+}
+
 @media screen and (max-height: 480px) {
   .header__mob-button {
     margin-top: 25px;
-  }
-
-  .header .menu--active {
-    height: 90.6%;
   }
 
   .header .menu--active::after {

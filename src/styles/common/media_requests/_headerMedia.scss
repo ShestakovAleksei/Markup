@@ -97,7 +97,7 @@
             display: flex;
             flex-direction: column;
             // border-bottom: 4px solid #FF699F;
-            height: 93.6%;
+            min-height: 100vh;
             &::before{
                 content: '';
                 position: absolute;
@@ -133,7 +133,6 @@
         margin-left: 24px;
 
         li {
-            padding: 0 0 20px 0px;
             margin-top: 40px;
         }
 
@@ -164,7 +163,6 @@
     .menu {
 
         &--active {
-            height: 95.5%;
             &::after{
                 display: block;
                 font-size: $menu-print-f-size;
@@ -186,7 +184,6 @@
     .menu {
 
         &--active {
-            height: 93%;
             &::after{
                 display: block;
                 font-size: $menu-print-f-size;
@@ -208,7 +205,6 @@
     .menu {
 
         &--active {
-            height: 93.2%;
             &::after{
                 display: block;
                 font-size: $menu-print-f-size;
@@ -230,7 +226,27 @@
     .menu {
 
         &--active {
-            height: 92.5%;
+            &::after{
+                display: block;
+                font-size: $menu-print-f-size;
+                left: $menu-print-l-position;
+                top: $menu-print-t-position;
+            }
+        }
+    }
+}
+
+@media screen and (height: 812px) {
+    //variables
+
+
+    $menu-print-f-size: 307px;
+    $menu-print-l-position: -126px;
+    $menu-print-t-position: 248px;
+
+    .menu {
+
+        &--active {
             &::after{
                 display: block;
                 font-size: $menu-print-f-size;
@@ -252,7 +268,6 @@
     .menu {
 
         &--active {
-            height: 92.1%;
             &::after{
                 display: block;
                 font-size: $menu-print-f-size;
@@ -284,7 +299,6 @@
         }
         .menu {
             &--active {
-                height: 90.6%;
                 &::after{
                     display: block;
                     font-size: $menu-print-f-size;
