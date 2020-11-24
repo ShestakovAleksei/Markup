@@ -39,22 +39,7 @@
     // .header__mob-button
 
     &__mob-button {
-        font-family: $montserrat;
-        font-size: 16px;
-        font-weight: 400;
-        color: $main-buttons-color;
-        width: 162px;
-        height: 46px;
-        border-radius: 3px;
-        border: 2px solid $main-buttons-color;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 23px;
-        position: relative;
-        top: 425px;
         display: none;
-        text-transform: capitalize;
     }
 
     // .header__button
