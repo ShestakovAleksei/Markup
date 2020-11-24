@@ -532,6 +532,24 @@ textarea {
 
 .header__mob-button {
   display: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FF699F;
+  width: 162px;
+  height: 46px;
+  border-radius: 3px;
+  border: 2px solid #FF699F;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 23px;
+  margin-top: 56px;
+  position: relative;
+  text-transform: capitalize;
 }
 
 .header__button {
@@ -602,6 +620,16 @@ textarea {
 
 .menu__print {
   display: none;
+  font-family: "Montserrat", sans-serif;
+  color: #fef2f6;
+  font-size: 250px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-weight: 900;
+  text-transform: capitalize;
+  position: absolute;
+  left: 263px;
+  top: 249px;
 }
 
 .list {
@@ -1112,60 +1140,7 @@ _and_cookies:before {
   padding: 70px 10px 0 10px;
 }
 
-@media (max-width: 767px) {
-  .marketing .marketing__body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-
-  .marketing .marketing__info {
-    margin-top: -20px;
-  }
-
-  .services__gallery {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .services__item {
-    margin-bottom: 15px;
-  }
-
-  .offers__body {
-    margin-top: 59px;
-  }
-
-  .offers__body .gallery {
-    grid-template-rows: 25% 25% 25% 25%;
-    grid-template-columns: 50% 50%;
-    margin-top: 32px;
-    grid-row-gap: 0%;
-  }
-
-  .offers__body .gallery__item {
-    width: 170px;
-  }
-
-  #main {
-    padding: 55px 10px 0 10px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .header {
-    width: 95%;
-  }
-
+@media screen and (max-width: 992px) {
   .header__body {
     height: 40px;
     margin: 0 10px 0 10px;
@@ -1235,24 +1210,6 @@ _and_cookies:before {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #FF699F;
-    width: 162px;
-    height: 46px;
-    border-radius: 3px;
-    border: 2px solid #FF699F;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: 23px;
-    position: relative;
-    margin-top: 56px;
-    text-transform: capitalize;
   }
 
   .menu {
@@ -1298,16 +1255,9 @@ _and_cookies:before {
 
   .menu__print--active {
     display: block;
-    font-family: "Montserrat", sans-serif;
-    color: #fef2f6;
-    font-size: 310px;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    font-weight: 900;
-    text-transform: capitalize;
-    position: absolute;
-    left: 263px;
-    top: 249px;
+    font-size: 320px;
+    left: 497px;
+    top: 258px;
   }
 
   .list {
@@ -1328,5 +1278,54 @@ _and_cookies:before {
 
   .logo--active {
     opacity: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .marketing .marketing__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .marketing .marketing__info {
+    margin-top: -20px;
+  }
+
+  .services__gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .services__item {
+    margin-bottom: 15px;
+  }
+
+  .offers__body {
+    margin-top: 59px;
+  }
+
+  .offers__body .gallery {
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 50% 50%;
+    margin-top: 32px;
+    grid-row-gap: 0%;
+  }
+
+  .offers__body .gallery__item {
+    width: 170px;
+  }
+
+  #main {
+    padding: 55px 10px 0 10px;
   }
 }

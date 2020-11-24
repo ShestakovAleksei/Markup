@@ -1,19 +1,17 @@
 @import '../fonts';
 @import '../variables';
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
     //variables
     $menu-links-f-size: 24px;
     $menu-links-f-l-height: 24.54px;
     $menu-links-f-weight: 700;
 
-    $menu-print-f-size: 310px;
-    $menu-print-l-position: 263px;
-    $menu-print-t-position: 249px;
+    $menu-print-f-size: 320px;
+    $menu-print-l-position: 497px;
+    $menu-print-t-position: 258px;
 
     .header {
-        width: 95%;
-
         &__body {
             height: 40px;
             margin: 0 10px 0 10px;
@@ -79,20 +77,6 @@
         &__mob-button {
             &--active {
                 display: flex;
-                font-family: $montserrat;
-                font-size: 16px;
-                font-weight: 400;
-                color: $main-buttons-color;
-                width: 162px;
-                height: 46px;
-                border-radius: 3px;
-                border: 2px solid $main-buttons-color;
-                justify-content: center;
-                align-items: center;
-                margin-left: 23px;
-                margin-top: 56px;
-                position: relative;
-                text-transform: capitalize;
             }
         }
     }
@@ -134,13 +118,7 @@
         &__print {
             &--active {
                 display: block;
-                font-family: "Montserrat", sans-serif;
-                color: $menu-print-color;
                 font-size: $menu-print-f-size;
-                transform: rotate(90deg);
-                font-weight: $menu-print-f-weight;
-                text-transform: capitalize;
-                position: absolute;
                 left: $menu-print-l-position;
                 top: $menu-print-t-position;
             }
