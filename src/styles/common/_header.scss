@@ -42,11 +42,11 @@
         font-family: $montserrat;
         font-size: 16px;
         font-weight: 400;
-        color: #ff699f;
+        color: $main-buttons-color;
         width: 162px;
         height: 46px;
         border-radius: 3px;
-        border: 2px solid #ff699f;
+        border: 2px solid $main-buttons-color;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -64,7 +64,7 @@
         height: 36px;
         margin-left: 11px;
         border-radius: 3px;
-        border: 2px solid #000000;
+        border: 2px solid $nav-button-color;
         color: $nav-button-color;
         display: flex;
         justify-content: center;
@@ -83,7 +83,7 @@
             transition: all .3s ease 0s;
 
             a {
-                color: #fff;
+                color: $nav-menu-bg-color;
             }
         }
     }
@@ -92,8 +92,8 @@
 .logo {
     text-decoration: none;
     font-family: $montserrat;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: $logo-f-size;
+    font-weight: $logo-f-weight;
     color: $header-logo-color;
     position: relative;
     z-index: 5;
@@ -122,14 +122,11 @@
 
     &__print {
         font-family: "Montserrat", sans-serif;
-        color: #fef2f6;
-        // z-index: 25;
+        color: $menu-print-color;
         display: none;
-        // font-size: 286px;
-        font-size: 35vh;
-        -webkit-transform: rotate(90deg);
+        font-size: $menu-print-f-size;
         transform: rotate(90deg);
-        font-weight: 900;
+        font-weight: $menu-print-f-weight;
         text-transform: capitalize;
         position: absolute;
         left: -130px;
@@ -178,148 +175,7 @@
         text-transform: capitalize;
         text-decoration: none;
         font-family: $roboto;
-        font-size: 14px;
-        font-weight: 400;
+        font-size: $menu-links-f-size;
+        font-weight: $menu-links-f-weight;
     }
-}
-
-
-@media (max-width: 767px) {
-    .header {
-        width: 95%;
-
-        &__body {
-            height: 40px;
-            margin: 0 10px 0 10px;
-        }
-
-        &__burger {
-            display: block;
-            position: relative;
-            width: 30px;
-            height: 20px;
-            z-index: 4;
-
-            &::before,
-            &::after {
-                content: '';
-                background-color: #000000;
-                position: absolute;
-                width: 100%;
-                height: 2px;
-                left: 0;
-                transition: all .3s ease 0s;
-            }
-
-            &::before {
-                top: 0;
-            }
-
-            &::after {
-                bottom: 0;
-            }
-
-            span {
-                position: absolute;
-                background-color: #000;
-                left: 0;
-                width: 100%;
-                height: 2px;
-                top: 9px;
-                transition: all .3s ease 0s;
-            }
-
-            &--active {
-                &::before {
-                    transform: rotate(45deg);
-                    top: 9px;
-                }
-
-                &::after {
-                    transform: rotate(-45deg);
-                    bottom: 9px;
-                }
-
-                span {
-                    transform: scale(0);
-                }
-            }
-        }
-
-        &__button {
-            display: none;
-        }
-
-        &__mob-button {
-            &--active {
-                display: flex;
-            }
-        }
-    }
-
-    .menu {
-        position: fixed;
-        top: -100%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-        padding: 50px 0 0 0;
-        transition: all .3s ease 0s;
-        background: $nav-menu-bg-color;
-
-        &--active {
-            top: 0;
-            display: flex;
-            flex-direction: column;
-            // border-bottom: 4px solid #FF699F;
-            height: 93.8%;
-            &::before{
-                content: '';
-                position: absolute;
-                bottom: 0;
-                background-color: #FF699F;
-                width: 100%;
-                height: 4px;
-                z-index: 1;
-            }
-        }
-
-        &__title {
-            &--active {
-                display: flex;
-            }
-        }
-
-        &__print {
-            &--active {
-                display: block;
-            }
-        }
-    }
-
-    .list {
-        height: 40px;
-        display: block;
-        margin-left: 24px;
-
-        li {
-            padding: 0 0 20px 0px;
-            margin-top: 40px;
-        }
-
-        &__link {
-            font-family: $montserrat;
-            font-size: 24px;
-            font-weight: 700;
-        }
-
-    }
-
-    .logo {
-        &--active {
-            opacity: 0;
-        }
-    }
-
 }

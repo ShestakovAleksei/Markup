@@ -1,8 +1,14 @@
+//scss 
 @import 'common/reset';
 @import 'common/header';
 @import 'common/mainscreen';
 @import 'common/services';
 @import 'common/offers';
+
+//scss media_requests 
+@import 'common/media_requests/headerMedia';
+
+//variables
 @import 'common/fonts';
 @import 'common/icons';
 @import 'common/variables';

@@ -1,0 +1,142 @@
+@import '../fonts';
+@import '../variables';
+
+@media screen and (max-width: 767px) {
+    .header {
+        width: 95%;
+
+        &__body {
+            height: 40px;
+            margin: 0 10px 0 10px;
+        }
+
+        &__burger {
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 20px;
+            z-index: 4;
+
+            &::before,
+            &::after {
+                content: '';
+                background-color: #000000;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                left: 0;
+                transition: all .3s ease 0s;
+            }
+
+            &::before {
+                top: 0;
+            }
+
+            &::after {
+                bottom: 0;
+            }
+
+            span {
+                position: absolute;
+                background-color: #000;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                top: 9px;
+                transition: all .3s ease 0s;
+            }
+
+            &--active {
+                &::before {
+                    transform: rotate(45deg);
+                    top: 9px;
+                }
+
+                &::after {
+                    transform: rotate(-45deg);
+                    bottom: 9px;
+                }
+
+                span {
+                    transform: scale(0);
+                }
+            }
+        }
+
+        &__button {
+            display: none;
+        }
+
+        &__mob-button {
+            &--active {
+                display: flex;
+            }
+        }
+    }
+
+    .menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        padding: 50px 0 0 0;
+        transition: all .3s ease 0s;
+        background: $nav-menu-bg-color;
+
+        &--active {
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            // border-bottom: 4px solid #FF699F;
+            height: 93.8%;
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                background-color: #FF699F;
+                width: 100%;
+                height: 4px;
+                z-index: 1;
+            }
+        }
+
+        &__title {
+            &--active {
+                display: flex;
+            }
+        }
+
+        &__print {
+            &--active {
+                display: block;
+            }
+        }
+    }
+
+    .list {
+        height: 40px;
+        display: block;
+        margin-left: 24px;
+
+        li {
+            padding: 0 0 20px 0px;
+            margin-top: 40px;
+        }
+
+        &__link {
+            font-family: $montserrat;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+    }
+
+    .logo {
+        &--active {
+            opacity: 0;
+        }
+    }
+
+}

@@ -18,6 +18,16 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
 html,
 body,
 div,
@@ -524,11 +534,11 @@ textarea {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #ff699f;
+  color: #FF699F;
   width: 162px;
   height: 46px;
   border-radius: 3px;
-  border: 2px solid #ff699f;
+  border: 2px solid #FF699F;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -615,9 +625,9 @@ textarea {
   font-family: "Montserrat", sans-serif;
   color: #fef2f6;
   display: none;
-  font-size: 35vh;
+  font-size: 250px;
   -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
+          transform: rotate(90deg);
   font-weight: 900;
   text-transform: capitalize;
   position: absolute;
@@ -1135,6 +1145,55 @@ _and_cookies:before {
 }
 
 @media (max-width: 767px) {
+  .marketing .marketing__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .marketing .marketing__info {
+    margin-top: -20px;
+  }
+
+  .services__gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .services__item {
+    margin-bottom: 15px;
+  }
+
+  .offers__body {
+    margin-top: 59px;
+  }
+
+  .offers__body .gallery {
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 50% 50%;
+    margin-top: 32px;
+    grid-row-gap: 0%;
+  }
+
+  .offers__body .gallery__item {
+    width: 170px;
+  }
+
+  #main {
+    padding: 55px 10px 0 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .header {
     width: 95%;
   }
@@ -1274,52 +1333,5 @@ _and_cookies:before {
 
   .logo--active {
     opacity: 0;
-  }
-
-  .marketing .marketing__body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-
-  .marketing .marketing__info {
-    margin-top: -20px;
-  }
-
-  .services__gallery {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .services__item {
-    margin-bottom: 15px;
-  }
-
-  .offers__body {
-    margin-top: 59px;
-  }
-
-  .offers__body .gallery {
-    grid-template-rows: 25% 25% 25% 25%;
-    grid-template-columns: 50% 50%;
-    margin-top: 32px;
-    grid-row-gap: 0%;
-  }
-
-  .offers__body .gallery__item {
-    width: 170px;
-  }
-
-  #main {
-    padding: 55px 10px 0 10px;
   }
 }
