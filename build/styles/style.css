@@ -971,11 +971,12 @@ _and_cookies:before {
   -ms-flex-line-pack: justify;
       align-content: space-between;
   grid-auto-flow: row;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 50% 50%;
+  grid-template-columns: 15.2% 15.2% 15.2% 15.2%;
   max-width: 1230px;
   width: 100%;
-  margin-top: 50px;
+  margin: 0 auto;
+  margin-top: 70px;
+  grid-row-gap: 15%;
 }
 
 .offers .gallery__item {
@@ -990,7 +991,6 @@ _and_cookies:before {
       -ms-flex-align: center;
           align-items: center;
   width: 190px;
-  min-height: 156px;
   margin-top: 51px;
 }
 
@@ -1312,6 +1312,7 @@ _and_cookies:before {
     grid-template-rows: 25% 25% 25% 25%;
     grid-template-columns: 50% 50%;
     margin-top: 32px;
+    grid-row-gap: 0%;
   }
 
   .offers__body .gallery__item {

@@ -1,3 +1,5 @@
+//colors
+
 $header-logo-color: #000000;
 $nav-menu-item-color: #000000;
 $nav-button-color: #000000;
@@ -10,6 +12,57 @@ $footer-logo-color: #FFFFFF;
 $footer-copyright-cokor: #FFFFFF;
 $footer-bg-color: #1F1F1F;
 $nav-menu-bg-color: #fff;
+
+//fonts-sizes and font weights
+
+//logo
+$logo-f-size: 18px;
+$logo-f-l-height: 16.9px;
+$logo-f-weight: 700;
+
+//main screen
+
+$main-title-f-size: 72px;
+$main-title-f-l-height: 67.61px;
+$main-title-f-weight: 700;
+
+    // main screen subtitle
+
+$main-subtitle-f-size: 24px;
+$main-subtitle-f-l-height: 67.61px;
+$main-subtitle-f-weight: 700;
+
+    // main menu links
+
+$menu-links-f-size: 14px;
+$menu-links-f-l-height: 16.41px;
+$menu-links-f-weight: 400;
+
+        // mobile menu print
+
+$menu-print-f-size: 250px;
+$menu-print-f-l-height: 234.75px;
+$menu-print-f-weight: 900;
+
+// body title
+
+$body-title-f-size: 36px;
+$body-title-f-l-height: 67.61px;
+$body-title-f-weight: 700;
+
+//item title
+
+$item-title-f-size: 24px;
+$item-title-f-l-height: 22.54px;
+$item-title-f-weight: 700; 
+
+// description
+
+$description-f-size: 16px;
+$description-f-l-height: 24.54px;    
+$description-f-weight: 700; 
+
+
 
 $montserrat: 'Montserrat', sans-serif;
 $roboto: 'Roboto', sans-serif;
