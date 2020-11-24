@@ -1369,3 +1369,33 @@ _and_cookies:before {
     top: 227px;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .menu--active {
+    height: 92.5%;
+  }
+
+  .menu--active::after {
+    display: block;
+    font-size: 255px;
+    left: -42px;
+    top: 204px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .menu--active {
+    height: 92.5%;
+  }
+
+  .menu--active::after {
+    display: block;
+    font-size: 241px;
+    left: -37px;
+    top: 196px;
+  }
+
+  .list li {
+    margin-top: 20px;
+  }
+}
