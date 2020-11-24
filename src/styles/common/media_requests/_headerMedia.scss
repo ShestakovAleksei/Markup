@@ -196,3 +196,25 @@
         }
     }
 }
+
+@media screen and (max-width: 425px) {
+    //variables
+
+
+    $menu-print-f-size: 280px;
+    $menu-print-l-position: -46px;
+    $menu-print-t-position: 227px;
+
+    .menu {
+
+        &--active {
+            height: 93.2%;
+            &::after{
+                display: block;
+                font-size: $menu-print-f-size;
+                left: $menu-print-l-position;
+                top: $menu-print-t-position;
+            }
+        }
+    }
+}
