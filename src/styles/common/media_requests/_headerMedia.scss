@@ -1,7 +1,7 @@
 @import '../fonts';
 @import '../variables';
 
-@media handheld and (max-width: 1024px) {
+@media all and (max-width: 1024px) {
     //variables
     $menu-links-f-size: 24px;
     $menu-links-f-l-height: 24.54px;
@@ -152,7 +152,7 @@
 
 }
 
-@media handheld and (max-width: 768px) {
+@media all and (max-width: 768px) {
     //variables
 
 
@@ -173,7 +173,7 @@
     }
 }
 
-@media handheld and (max-width: 576px) {
+@media all and (max-width: 576px) {
     //variables
 
 
@@ -194,7 +194,7 @@
     }
 }
 
-@media handheld and (max-width: 425px) {
+@media all and (max-width: 425px) {
     //variables
 
 
@@ -215,7 +215,7 @@
     }
 }
 
-@media handheld and (max-width: 375px) {
+@media all and (max-width: 375px) {
     //variables
 
 
@@ -236,7 +236,7 @@
     }
 }
 
-@media handheld and (height: 812px) {
+@media all and (height: 812px) {
     //variables
 
 
@@ -257,7 +257,7 @@
     }
 }
 
-@media handheld and (max-width: 320px) {
+@media all and (max-width: 320px) {
     //variables
 
 
@@ -285,7 +285,7 @@
 }
 
 
-@media handheld and (max-height: 480px) {
+@media all and (max-height: 480px) {
     //variables
 
 
