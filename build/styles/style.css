@@ -1385,7 +1385,7 @@ _and_cookies:before {
 
 @media screen and (max-width: 320px) {
   .menu--active {
-    height: 92.5%;
+    height: 92.1%;
   }
 
   .menu--active::after {
@@ -1397,5 +1397,22 @@ _and_cookies:before {
 
   .list li {
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-height: 480px) {
+  .header__mob-button {
+    margin-top: 25px;
+  }
+
+  .header .menu--active {
+    height: 90.6%;
+  }
+
+  .header .menu--active::after {
+    display: block;
+    font-size: 203px;
+    left: 24px;
+    top: 165px;
   }
 }

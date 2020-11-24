@@ -252,7 +252,7 @@
     .menu {
 
         &--active {
-            height: 92.5%;
+            height: 92.1%;
             &::after{
                 display: block;
                 font-size: $menu-print-f-size;
@@ -265,6 +265,33 @@
     .list {
         li {
             margin-top: 20px;
+        }
+    }
+}
+
+
+@media screen and (max-height: 480px) {
+    //variables
+
+
+    $menu-print-f-size: 203px;
+    $menu-print-l-position: 24px;
+    $menu-print-t-position: 165px;
+
+    .header{
+        &__mob-button{
+            margin-top: 25px;
+        }
+        .menu {
+            &--active {
+                height: 90.6%;
+                &::after{
+                    display: block;
+                    font-size: $menu-print-f-size;
+                    left: $menu-print-l-position;
+                    top: $menu-print-t-position;
+                }
+            }
         }
     }
 }
