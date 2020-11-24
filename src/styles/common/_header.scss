@@ -119,7 +119,8 @@
 
     // .menu__print
 
-    &__print {
+    &::after {
+        content: 'menu';
         display: none;
         font-family: "Montserrat", sans-serif;
         color: $menu-print-color;

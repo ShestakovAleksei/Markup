@@ -1,15 +1,15 @@
 @import '../fonts';
 @import '../variables';
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
     //variables
     $menu-links-f-size: 24px;
     $menu-links-f-l-height: 24.54px;
     $menu-links-f-weight: 700;
 
-    $menu-print-f-size: 320px;
-    $menu-print-l-position: 497px;
-    $menu-print-t-position: 258px;
+    $menu-print-f-size: 304px;
+    $menu-print-l-position: 551px;
+    $menu-print-t-position: 242px;
 
     .header {
         &__body {
@@ -97,7 +97,7 @@
             display: flex;
             flex-direction: column;
             // border-bottom: 4px solid #FF699F;
-            height: 93.8%;
+            height: 93.6%;
             &::before{
                 content: '';
                 position: absolute;
@@ -107,6 +107,12 @@
                 height: 4px;
                 z-index: 1;
             }
+            &::after{
+                display: block;
+                font-size: $menu-print-f-size;
+                left: $menu-print-l-position;
+                top: $menu-print-t-position;
+            }
         }
 
         &__title {
@@ -115,14 +121,11 @@
             }
         }
 
-        &__print {
-            &--active {
-                display: block;
-                font-size: $menu-print-f-size;
-                left: $menu-print-l-position;
-                top: $menu-print-t-position;
-            }
-        }
+        // &__print {
+        //     &--active {
+                
+        //     }
+        // }
     }
 
     .list {
@@ -148,4 +151,48 @@
         }
     }
 
+}
+
+@media screen and (max-width: 768px) {
+    //variables
+
+
+    $menu-print-f-size: 420px;
+    $menu-print-l-position: 150px;
+    $menu-print-t-position: 350px;
+
+    .menu {
+
+        &--active {
+            height: 95.5%;
+            &::after{
+                display: block;
+                font-size: $menu-print-f-size;
+                left: $menu-print-l-position;
+                top: $menu-print-t-position;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    //variables
+
+
+    $menu-print-f-size: 270px;
+    $menu-print-l-position: 100px;
+    $menu-print-t-position: 227px;
+
+    .menu {
+
+        &--active {
+            height: 93%;
+            &::after{
+                display: block;
+                font-size: $menu-print-f-size;
+                left: $menu-print-l-position;
+                top: $menu-print-t-position;
+            }
+        }
+    }
 }
