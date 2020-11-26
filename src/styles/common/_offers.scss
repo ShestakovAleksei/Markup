@@ -162,27 +162,3 @@
         }
     }
 }
-
-@media (max-width: 767px){
-    .offers {
-        &__body {
-            margin-top: 59px;
-            .gallery {
-                // display: flex;
-                // flex-flow: row wrap;
-                // align-content: space-between;
-                // justify-content: space-between;
-                grid-template-rows: 25% 25% 25% 25%;
-                grid-template-columns: 50% 50%;
-                margin-top: 32px;
-                grid-row-gap: 0%;
-                &__item{
-                    width: 170px;
-                }
-            }
-        }
-
-        
-    }
-
-}

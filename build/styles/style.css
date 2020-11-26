@@ -1148,6 +1148,12 @@ _and_cookies:before {
   margin: 0 auto;
 }
 
+@media (max-width: 1296px) {
+  .container {
+    padding: 0 15px 0;
+  }
+}
+
 @media (max-width: 1280px) {
   .services__body {
     padding-top: 56px;
@@ -1355,8 +1361,80 @@ _and_cookies:before {
     font-size: 14px;
   }
 
-  .container {
-    padding: 0 15px 0;
+  .offers__body {
+    margin-top: 74px;
+  }
+
+  .offers .info__title {
+    font-size: 24px;
+  }
+
+  .offers .info__description {
+    font-family: "Montserrat", sans-serif;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 400;
+    max-width: 668px;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .offers .info__description::first-letter {
+    text-transform: uppercase;
+  }
+
+  .offers .gallery {
+    margin-top: -2px;
+  }
+
+  .offers .gallery__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 25%;
+        -ms-flex: 25%;
+            flex: 25%;
+    width: 147px;
+    height: 130px;
+    margin-top: 34px;
+  }
+
+  .offers .gallery__icon-1::before {
+    content: "\E008";
+    font-size: 44px;
+  }
+
+  .offers .gallery__description {
+    font-size: 13px;
+    margin-top: 0px;
+  }
+
+  .offers .gallery__icon-2::before {
+    font-size: 49px;
+  }
+
+  .offers .gallery__icon-3::before {
+    font-size: 42px;
+  }
+
+  .offers .gallery__icon-4::before {
+    font-size: 44px;
+  }
+
+  .offers .gallery__icon-5::before {
+    font-size: 45px;
+  }
+
+  .offers .gallery__icon-6::before {
+    font-size: 63px;
+  }
+
+  .offers .gallery__icon-7::before {
+    font-size: 35px;
+  }
+
+  .offers .gallery__icon-8::before {
+    font-size: 42px;
   }
 }
 
@@ -1417,20 +1495,11 @@ _and_cookies:before {
   }
 }
 
-@media (max-width: 767px) {
-  .offers__body {
-    margin-top: 59px;
-  }
-
-  .offers__body .gallery {
-    grid-template-rows: 25% 25% 25% 25%;
-    grid-template-columns: 50% 50%;
-    margin-top: 32px;
-    grid-row-gap: 0%;
-  }
-
-  .offers__body .gallery__item {
-    width: 170px;
+@media (max-width: 600px) {
+  .offers .gallery__item {
+    -webkit-box-flex: 33%;
+        -ms-flex: 33%;
+            flex: 33%;
   }
 }
 

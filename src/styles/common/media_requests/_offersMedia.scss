@@ -1,0 +1,136 @@
+@media (max-width: 1024px){
+
+    $body-title-f-size: 24px;
+    $description-f-size: 13px;
+
+    .offers {
+
+        // .offers__body
+    
+        &__body {
+            margin-top: 74px;
+        }
+        & .info {
+    
+            // .info__title
+        
+            &__title {
+                font-size: $body-title-f-size;
+            }
+        
+            // .info__description
+        
+            &__description {
+                font-family: $montserrat;
+                color: $description-color;
+                font-size: $description-f-size;
+                font-weight: $description-f-weight;
+                max-width: 668px;
+                width: 100%;
+                margin-top: 8px;
+                &::first-letter{
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .gallery {
+            margin-top: -2px;
+    
+            // .gallery__item
+        
+            &__item {
+                display: flex;
+                flex: 25%;
+                width: 147px;
+                height: 130px;
+                margin-top: 34px;
+            }      
+            // .gallery__icon-1
+        
+            &__icon-1 {
+                &::before{
+                    content: "\E008";
+                    font-size: 44px;
+                    // transform: translateY(-50%);
+    
+                }
+            }
+        
+            // .gallery__description
+        
+            &__description {
+                font-size: $description-f-size;
+                margin-top: 0px;
+            }
+        
+            // .gallery__icon-2
+        
+            &__icon-2 {
+                &::before{
+                    font-size: 49px;
+                }
+            }
+        
+            // .gallery__icon-3
+        
+            &__icon-3 {
+                &::before{
+                    font-size: 42px;
+                }
+            }
+        
+            // .gallery__icon-4
+        
+            &__icon-4 {
+                &::before{
+                    font-size: 44px;
+                }
+            }
+        
+            // .gallery__icon-5
+        
+            &__icon-5 {
+                &::before{
+                    font-size: 45px;
+                }
+            }
+        
+            // .gallery__icon-6
+        
+            &__icon-6 {
+                &::before{
+                    font-size: 63px;
+                }
+            }
+        
+            // .gallery__icon-7
+        
+            &__icon-7 {
+                &::before{
+                    font-size: 35px;
+                }
+            }
+        
+            // .gallery__icon-8
+        
+            &__icon-8 {
+                &::before{
+                    font-size: 42px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .offers{
+        & .gallery {
+
+            // .gallery__item
+        
+            &__item {
+                flex: 33%;
+            }
+        }
+    }
+}
