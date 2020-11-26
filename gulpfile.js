@@ -126,15 +126,15 @@ gulp.task('fonts', async function() {
 //         .pipe(dest('src/assets/fonts/'));
 // });
 
-gulp.task('watchFiles', function(params) {
-    gulp.watch('src/**/*.html').on('change', gulp.parallel(browserSync.reload, watch));
-    gulp.watch('src/styles/**/*.scss').on('change', gulp.parallel(browserSync.reload, watch));
-    gulp.watch('src/js/**/*.js').on('change', gulp.parallel(browserSync.reload, watch));
-    gulp.watch('src/assets/img/**/*.{jpg,png,svg,gif,ico,webp}').on('change', gulp.parallel(browserSync.reload, watch));
-});
+// gulp.task('watchFiles', function(params) {
+//     gulp.watch('src/**/*.html').on('change', gulp.parallel(browserSync.reload, watch));
+//     gulp.watch('src/styles/**/*.scss').on('change', gulp.parallel(browserSync.reload, watch));
+//     gulp.watch('src/js/**/*.js').on('change', gulp.parallel(browserSync.reload, watch));
+//     gulp.watch('src/assets/img/**/*.{jpg,png,svg,gif,ico,webp}').on('change', gulp.parallel(browserSync.reload, watch));
+// });
 
 const build = gulp.series(gulp.parallel('js', 'css', 'html'));
-const watch = gulp.parallel(build, 'watchFiles', 'browser-sync');
+const watch = gulp.parallel(build);
 
 
 exports.build = build;
