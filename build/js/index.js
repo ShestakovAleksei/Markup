@@ -8,3 +8,7 @@ $(document).ready(function() {
         $('.menu__print').toggleClass('menu__print--active');
     });
 });
+
+
+//slick slider
+
