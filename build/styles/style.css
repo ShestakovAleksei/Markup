@@ -965,25 +965,6 @@ _and_cookies:before {
   text-transform: uppercase;
 }
 
-.offers .gallery {
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  grid-auto-flow: row;
-  grid-template-columns: 15.2% 15.2% 15.2% 15.2%;
-  max-width: 1230px;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 70px;
-  grid-row-gap: 15%;
-}
-
 .offers .gallery__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -996,7 +977,22 @@ _and_cookies:before {
       -ms-flex-align: center;
           align-items: center;
   width: 190px;
+  height: 156px;
   margin-top: 51px;
+}
+
+.offers .gallery__icon-wrapper {
+  min-height: 97px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .offers .gallery .icon {
@@ -1007,8 +1003,8 @@ _and_cookies:before {
   position: absolute;
   color: #FF699F;
   font-family: "icons";
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .offers .gallery__icon-1::before {
@@ -1023,7 +1019,7 @@ _and_cookies:before {
   font-size: 16px;
   font-weight: 400;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 9px;
 }
 
 .offers .gallery__description::first-letter {
