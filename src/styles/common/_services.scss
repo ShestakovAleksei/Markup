@@ -1,12 +1,12 @@
 .services {
-    margin-top: 100px;
+    
 
     // .services__body
 
     &__body {
         display: flex;
         flex-direction: column;
-
+        padding-top: 100px;
     }
 
     // .services__info
@@ -22,15 +22,15 @@
 
     &__title {
         font-family: $montserrat;
-        font-size: 36px;
-        font-weight: 700;
+        font-size: $body-title-f-size;
+        font-weight: $body-title-f-weight;
         text-align: left;
     }
 
     &__description{
         font-family: $montserrat;
-        font-size: 16px;
-        font-weight: 400;
+        font-size: $description-f-size;
+        font-weight: $description-f-weight;
         text-align: left;
         margin-top: 24px;
         max-width: 668px;
@@ -86,8 +86,8 @@
 
     &__subtitle {
         font-family: $montserrat;
-        font-size: 24px;
-        font-weight: 700;
+        font-size: $item-title-f-size;
+        font-weight: $item-title-f-weight;
         text-align: left;
         margin-top: 40px;
         text-transform: capitalize;
@@ -99,8 +99,8 @@
         margin-top: 24px;
         li{
             font-family: $montserrat;
-            font-size: 16px;
-            font-weight: 400;
+            font-size: $description-f-size;
+            font-weight: $description-f-weight;
             text-align: left;
             margin-bottom: 8px;
             text-transform: capitalize;
@@ -109,17 +109,4 @@
 
     // .services__decription
 
-}
-
-@media (max-width: 767px){
-    .services {
-        &__gallery {
-            display: flex;
-            flex-direction: column;
-        }
-        &__item {
-            margin-bottom: 15px;
-        }
-
-    }
 }

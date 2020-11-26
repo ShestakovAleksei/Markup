@@ -717,7 +717,7 @@ textarea {
 .mainscreen__description {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   text-align: left;
   margin-top: 40px;
   max-width: 383px;
@@ -765,10 +765,6 @@ textarea {
   height: auto;
 }
 
-.services {
-  margin-top: 100px;
-}
-
 .services__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -777,6 +773,7 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 100px;
 }
 
 .services__info {
@@ -1305,6 +1302,49 @@ _and_cookies:before {
     font-size: 14px;
   }
 
+  .services__body {
+    padding-top: 56px;
+  }
+
+  .services__title {
+    font-size: 24px;
+  }
+
+  .services__description {
+    font-size: 13px;
+    margin-top: 12px;
+  }
+
+  .services__gallery {
+    width: 87%;
+    margin-top: 20px;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+
+  .services__item {
+    margin-top: 12px;
+    width: 285px;
+  }
+
+  .services__subtitle {
+    font-size: 18px;
+    margin-top: 24px;
+    text-transform: capitalize;
+  }
+
+  .services__list {
+    margin: 16px 0 16px;
+  }
+
+  .services__list li {
+    font-size: 13px;
+  }
+
+  .services__item-decription {
+    height: auto;
+  }
+
   .container {
     padding: 0 15px 0;
   }
@@ -1355,23 +1395,17 @@ _and_cookies:before {
   .mainscreen__button {
     margin-top: 24px;
   }
-}
 
-@media (max-width: 767px) {
   .services__gallery {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    width: 100%;
   }
 
   .services__item {
-    margin-bottom: 15px;
+    width: 49%;
   }
+}
 
+@media (max-width: 767px) {
   .offers__body {
     margin-top: 59px;
   }
@@ -1385,6 +1419,16 @@ _and_cookies:before {
 
   .offers__body .gallery__item {
     width: 170px;
+  }
+}
+
+@media (max-width: 599px) {
+  .services__gallery {
+    width: 100%;
+  }
+
+  .services__item {
+    width: 100%;
   }
 }
 
