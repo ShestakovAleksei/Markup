@@ -1531,6 +1531,18 @@ _and_cookies:before {
   }
 }
 
+@media (max-width: 414px) {
+  .offers .gallery__item {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
+
+  .offers .gallery__description {
+    width: 87%;
+  }
+}
+
 @media all and (max-width: 375px) {
   .menu--active::after {
     display: block;

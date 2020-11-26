@@ -134,3 +134,21 @@
         }
     }
 }
+
+@media (max-width: 414px){
+
+
+    .offers{
+        & .gallery {
+
+            // .gallery__item
+        
+            &__item {
+                flex: 50%;
+            }
+            &__description {
+                width: 87%;
+            }
+        }
+    }
+}
