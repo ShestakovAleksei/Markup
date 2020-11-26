@@ -6,6 +6,9 @@
 
 
     .mainscreen {
+        &__body {
+            padding-top: 40px;
+        }
     
         &__info{
             margin-right: 20px;
@@ -47,7 +50,35 @@
             font-size: $main-title-f-size;
             max-width: 100%;
             margin: none;
-            margin-top: 20px;
+            margin-top: 32px;
+        }
+        &__subtitle {
+            font-size: $main-subtitle-f-size;
+            margin-top: 11px;
+        }
+        &__description {
+            font-size: $description-f-size;
+            max-width: 100%;
+            margin-top: 18px;
+        }
+        &__button{
+            margin-top: 24px;
+        }
+    }    
+}
+
+@media (max-width: 375px){
+
+    $main-title-f-size: 36px;
+    $main-subtitle-f-size: 14px;
+    $description-f-size: 14px;
+
+
+    .mainscreen {
+
+        &__title {
+            font-size: $main-title-f-size;
+            max-width: 86%;
         }
         &__subtitle {
             font-size: $main-subtitle-f-size;
