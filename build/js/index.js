@@ -12,3 +12,14 @@ $(document).ready(function() {
 
 //slick slider
 
+$(document).ready(function(){
+    $('.slider').slick({
+        dots: false,
+        infinite: false,
+        slidesToShow: 1,
+        autoplay: true,
+        // appendArrows: $('.slider-nav'),
+        prevArrow: $('.left-arrow-wrapper'),
+        nextArrow: $('.right-arrow-wrapper')
+    });
+  });
