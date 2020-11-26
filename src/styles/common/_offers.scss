@@ -16,8 +16,8 @@
         &__title {
             font-family: $montserrat;
             color: $title-color;
-            font-size: 36px;
-            font-weight: 700;
+            font-size: $body-title-f-size;
+            font-weight: $body-title-f-weight;
             text-align: left;
             &::first-letter{
                 text-transform: uppercase;
@@ -29,8 +29,8 @@
         &__description {
             font-family: $montserrat;
             color: $description-color;
-            font-size: 16px;
-            font-weight: 400;
+            font-size: $description-f-size;
+            font-weight: $description-f-weight;
             max-width: 668px;
             width: 100%;
             margin-top: 24px;
@@ -88,8 +88,8 @@
     
         &__description {
             font-family: $montserrat;
-            font-size: 16px;
-            font-weight: 400;
+            font-size: $description-f-size;
+            font-weight: $description-f-weight;
             text-align: center;
             margin-top: 70px;
             &::first-letter{
