@@ -139,6 +139,9 @@
                 bottom: -5px;
                 left: 0px;
                 z-index: 5;
+                &:hover{
+                    cursor: pointer;
+                }
             }
             & .right-arrow-wrapper{
                 width: 40px;
@@ -148,6 +151,9 @@
                 bottom: -5px;
                 right: 0px;
                 z-index: 5;
+                &:hover{
+                    cursor: pointer;
+                }
             }
         }
     

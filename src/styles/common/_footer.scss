@@ -1,0 +1,34 @@
+.footer {
+    background-color: $footer-bg-color;
+    width: 100%;
+
+    // .footer__body
+
+    &__body {
+        min-height: 88px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    // .footer__logo
+
+    &__logo {
+        color: $footer-logo-color;
+        font-family: $montserrat;
+        font-size: $logo-f-size;
+        font-weight: $logo-f-weight;
+    }
+
+    // .footer__copyright
+
+    &__copyright {
+        color: $footer-copyright-cokor;
+        font-family: $montserrat;
+        font-size: $description-f-size;
+        font-weight: $description-f-weight;
+
+    }
+}
