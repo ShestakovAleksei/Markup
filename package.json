@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "mozjpeg": "^7.0.0",
-    "optipng-bin": "^7.0.0"
+    "optipng-bin": "^7.0.0",
+    "slick-carousel": "^1.8.1"
   }
 }
