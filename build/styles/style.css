@@ -1779,6 +1779,10 @@ _and_cookies:before {
   .services__item {
     width: 49%;
   }
+
+  .footer__body {
+    height: 55px;
+  }
 }
 
 @media (max-width: 768px) {
