@@ -187,9 +187,11 @@
     // .slider__picture
 
     &__picture {
-        border-radius: 2px;
-        max-width: 298px;
-        width: 100%;
+        & img{
+            border-radius: 2px;
+            max-width: 298px;
+            width: 100%;
+        }
     }
 
     // .slider__info

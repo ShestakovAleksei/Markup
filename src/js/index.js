@@ -15,11 +15,28 @@ $(document).ready(function() {
 $(document).ready(function(){
     $('.slider').slick({
         dots: false,
-        infinite: true,
+        infinite: false,
         slidesToShow: 2,
-        autoplay: true,
+        autoplay: false,
         // appendArrows: $('.slider-nav'),
         prevArrow: $('.left-arrow-wrapper'),
-        nextArrow: $('.right-arrow-wrapper')
+        nextArrow: $('.right-arrow-wrapper'),
+        responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                arrows: false,
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '30px',
+                slidesToShow: 1
+              }
+            }
+          ]
     });
-  });
+});
