@@ -15,8 +15,8 @@ $(document).ready(function() {
 $(document).ready(function(){
     $('.slider').slick({
         dots: false,
-        infinite: false,
-        slidesToShow: 1,
+        infinite: true,
+        slidesToShow: 2,
         autoplay: true,
         // appendArrows: $('.slider-nav'),
         prevArrow: $('.left-arrow-wrapper'),
