@@ -1,33 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
-
 html,
 body,
 div,
@@ -1476,6 +1452,10 @@ _and_cookies:before {
   border: 0;
 }
 
+#main {
+  content-visibility: auto;
+}
+
 .container {
   max-width: 1296px;
   width: 100%;
@@ -1890,13 +1870,13 @@ _and_cookies:before {
   }
 
   .mainscreen__info {
-    margin-right: none;
+    margin-right: 0;
   }
 
   .mainscreen__title {
     font-size: 36px;
     max-width: 100%;
-    margin: none;
+    margin: 0;
     margin-top: 32px;
   }
 
