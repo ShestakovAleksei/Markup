@@ -171,9 +171,6 @@
   z-index: 10;
 }
 
-.list li:hover {
-}
-
 .list li:hover::before {
   width: 100%;
   height: 1px;
@@ -188,9 +185,6 @@
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
-}
-
-.mainscreen {
 }
 
 .mainscreen__body {
