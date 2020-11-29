@@ -1,8 +1,9 @@
 .mainscreen {
-
+    critical: this;
     // .marketing__body
 
     &__body {
+        critical: this;
         display: flex;
         padding-top: 72px;
     }
@@ -10,6 +11,7 @@
     // .marketing__info
 
     &__info {
+        critical: this;
         display: flex;
         flex-flow: column;
     }
@@ -17,6 +19,7 @@
     // .marketing__title
 
     &__title {
+        critical: this;
         font-family: $montserrat;
         font-size: $main-title-f-size;
         font-weight: $main-title-f-weight;
@@ -30,6 +33,7 @@
     // .marketing__subtitle
 
     &__subtitle {
+        critical: this;
         font-family: $montserrat;
         font-size: $main-subtitle-f-size;
         font-weight: $main-subtitle-f-weight;
@@ -41,6 +45,7 @@
     // .marketing__description
 
     &__description {
+        critical: this;
         font-family: $montserrat;
         font-size: $description-f-size;
         font-weight: $description-f-weight;
@@ -49,6 +54,7 @@
         max-width: 383px;
         line-height: 24.54px;
         &::first-letter{
+            critical: this;
             text-transform: uppercase;
         }
     }
@@ -56,6 +62,7 @@
     // .marketing__button
 
     &__button {
+        critical: this;
         font-family: $montserrat;
         font-size: 16px;
         font-weight: 700;
@@ -69,6 +76,7 @@
         justify-content: center;
         align-items: center;
         &:hover{
+            critical: this;
             color: #fff;
             background-color:  #ff699f;
             transition: all .3s ease 0s;
@@ -78,8 +86,10 @@
     // .marketing__picture
 
     &__picture {
+        critical: this;
         margin-left: auto;
         img{
+            critical: this;
             width: 100%;
             height: auto;
         }

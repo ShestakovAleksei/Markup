@@ -46,6 +46,8 @@ gulp.task('css', function() {
                 })
             )
             .pipe(dest('build/styles'))
+            .pipe(criticalCss())
+            .pipe(dest('build/styles'))
             .pipe(cleanCss())
             .pipe(
                 rename({
@@ -53,9 +55,15 @@ gulp.task('css', function() {
                 })
             )
             .pipe(dest('build/styles'))
-            .pipe(criticalCss())
-            .pipe(dest('build/styles'))
 });
+
+
+// critical css using 
+
+// .my-selector {
+//     critical: this;
+//     color: red;
+// }
 
 gulp.task('js', function() {
     return  gulp.src('src/js/**/*.js')

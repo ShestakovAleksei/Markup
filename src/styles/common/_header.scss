@@ -2,6 +2,7 @@
 @import 'variables';
 
 .header {
+    critical: this;
     position: fixed;
     width: 100%;
     top: 0;
@@ -10,6 +11,7 @@
 
     // padding: 19px 0 10px 0;
     &::before {
+        critical: this;
         content: '';
         position: absolute;
         top: 0;
@@ -23,6 +25,7 @@
     // .header__body
 
     &__body {
+        critical: this;
         position: relative;
         display: flex;
         justify-content: space-between;
@@ -33,12 +36,14 @@
     // .header__burger
 
     &__burger {
+        critical: this;
         display: none;
     }
 
     // .header__mob-button
 
     &__mob-button {
+        critical: this;
         display: none;
         font-family: $montserrat;
         font-size: 16px;
@@ -59,6 +64,7 @@
     // .header__button
 
     &__button {
+        critical: this;
         width: 116px;
         height: 36px;
         margin-left: 11px;
@@ -70,6 +76,7 @@
         align-items: center;
 
         a {
+            critical: this;
             text-decoration: none;
             font-family: $montserrat;
             font-size: 16px;
@@ -78,10 +85,12 @@
         }
 
         &:hover {
+            critical: this;
             background-color: $nav-menu-item-color;
             transition: all .3s ease 0s;
 
             a {
+                critical: this;
                 color: $nav-menu-bg-color;
             }
         }
@@ -89,6 +98,7 @@
 }
 
 .logo {
+    critical: this;
     text-decoration: none;
     font-family: $montserrat;
     font-size: $logo-f-size;
@@ -99,6 +109,7 @@
 }
 
 .menu {
+    critical: this;
     display: flex;
     position: relative;
     z-index: 4;
@@ -106,6 +117,7 @@
     // .menu__title
 
     &__title {
+        critical: this;
         font-family: $montserrat;
         font-size: 36px;
         font-weight: 700;
@@ -120,6 +132,7 @@
     // .menu__print
 
     &::after {
+        critical: this;
         content: 'menu';
         display: none;
         font-family: "Montserrat", sans-serif;
@@ -135,18 +148,22 @@
 }
 
 .list {
+    critical: this;
     display: flex;
     align-items: center;
 
     li {
+        critical: this;
         margin-right: 24px;
         position: relative;
 
         &:hover {
+            critical: this;
             cursor: pointer;
         }
 
         &::before {
+            critical: this;
             content: '';
             position: absolute;
             top: 15px;
@@ -158,7 +175,9 @@
         }
 
         &:hover {
+            critical: this;
             &::before {
+                critical: this;
                 width: 100%;
                 height: 1px;
                 transition: all .3s ease 0s;
@@ -170,6 +189,7 @@
     // .list__link
 
     &__link {
+        critical: this;
         color: $nav-button-color;
         text-transform: capitalize;
         text-decoration: none;
