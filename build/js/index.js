@@ -6,7 +6,7 @@ $(document).ready(function() {
         $('.logo').toggleClass('logo--active');
         $('.header__mob-button').toggleClass('header__mob-button--active');
         $('.menu__print').toggleClass('menu__print--active');
-    });
+    });  
 });
 
 

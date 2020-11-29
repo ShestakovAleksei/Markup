@@ -16,7 +16,8 @@ const   gulp = require('gulp'),
         { dest } = require('vinyl-fs'),
         criticalCss = require('gulp-critical-css'),
         addSource = require('gulp-add-source-picture'),
-        sizeOf = require('image-size');
+        sizeOf = require('image-size'),
+        {watch, series} = require('gulp');
 
 //server
 // gulp.task('browser-sync', function() {
@@ -35,11 +36,6 @@ gulp.task('html', function () {
             .pipe(addSource('build/img'))
             .pipe(dest('build'));
 });
-
-// using gulp-add-source-picture
-// <picture>
-//     <img src="../images/image.jpg" alt="example">
-// </picture>
 
 gulp.task('css', function() {
     return  gulp.src('src/styles/**/*.scss')
@@ -66,12 +62,7 @@ gulp.task('css', function() {
 });
 
 
-// critical css using 
 
-// .my-selector {
-//     critical: this;
-//     color: red;
-// }
 
 gulp.task('js', function() {
     return  gulp.src('src/js/**/*.js')
@@ -136,19 +127,32 @@ gulp.task('fonts', async function() {
             .pipe(dest('build/fonts'));
 });
 
-// gulp.task('watchFiles', function(params) {
-//     gulp.watch('src/**/*.html').on('change', gulp.parallel(browserSync.reload, watch));
-//     gulp.watch('src/styles/**/*.scss').on('change', gulp.parallel(browserSync.reload, watch));
-//     gulp.watch('src/js/**/*.js').on('change', gulp.parallel(browserSync.reload, watch));
-//     gulp.watch('src/assets/img/**/*.{jpg,png,svg,gif,ico,webp}').on('change', gulp.parallel(browserSync.reload, watch));
-// });
 
-const build = gulp.series(gulp.parallel('js', 'css', 'html'));
-const watch = gulp.parallel(build);
+gulp.task('watcher', function(){
+    watch('src/**/**/*.{html,scss,js}', series('html','css','js'));
+});
 
 
-exports.build = build;
-exports.watch = watch;
-exports.default = watch;
+exports.assets = series('fonts','icon', 'img')
 
-// отдельно запускаем img, fonts, icon
+exports.default = series('watcher');
+
+
+
+
+//  gulp-add-source-picture using   -   -   - 
+
+            // <picture>
+            //     <img src="../images/image.jpg" alt="example">
+            // </picture>
+
+// critical css using   -   -   -
+
+            // .my-selector {
+            //     critical: this;
+            // }
+
+// assets use to:
+            //  convert svg icons to iconFont.css
+            //  optimaze images
+            // convert *.ttf and *.otf fonts to *.woff and *.woff2
