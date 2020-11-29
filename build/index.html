@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Wedding Dance</title>
   <meta name="description" content="Wedding">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
+  <!-- <style>
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap");
@@ -299,7 +299,7 @@
   src: url("../fonts/icons.eot");
   src: url("../fonts/icons.eot?#iefix") format("eot"), url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.ttf") format("truetype"), url("../fonts/icons.svg#icons") format("svg");
 }
-</style>
+</style> -->
 </head>
 
 <body>
@@ -371,7 +371,9 @@
                 <div class="mainscreen__button wow animate__animated animate__backInDown animate__delay-1s">Let’s start</div>
             </div>
             <div class="mainscreen__picture wow animate__animated animate__backInDown animate__delay-1s">
-                <img src="img/first-dance-i.jpg" alt="img">
+                <picture><source type="image/webp" srcset="img/first-dance-i.webp 1368w, img/first-dance-i@0.25x.webp 342w, img/first-dance-i@0.5x.webp 684w, img/first-dance-i@2x.webp 2736w"><source srcset="img/first-dance-i.jpg 1368w, img/first-dance-i@0.25x.jpg 342w, img/first-dance-i@0.5x.jpg 684w, img/first-dance-i@2x.jpg 2736w">
+                    <img src="img/first-dance-i.jpg" alt="img">
+                </picture>
             </div>
         </div>
     </div>
@@ -386,7 +388,15 @@
             <div class="services__gallery">
                 <div class="services__item">
                     <div class="services__picture">
-                        <img src="img/galimg1.jpg" alt="1">
+                        <picture>
+                            <source 
+                            type="image/webp" 
+                            srcset="img/galimg1.webp 
+                            421w, img/galimg1@0.5x.webp 212w">
+                            <source srcset="img/galimg1.jpg 421w, 
+                            img/galimg1@0.5x.jpg 212w">
+                            <img src="img/galimg1.jpg" alt="1">
+                        </picture>
                     </div>
                     <div class="services__item-decription">
                         <h3 class="services__subtitle">For Bride and Groom</h3>
@@ -606,7 +616,7 @@
                 </div>
                 <div class="slider-nav">
                     <div type="button" class="left-arrow-wrapper slick-prev">
-                        <span  class="slider-nav__left-arrow"></span>
+                        <span class="slider-nav__left-arrow"></span>
                     </div>
                     <div class="slider-nav__counter">
                         <div class="slider-nav__current">1</div>
@@ -637,6 +647,7 @@
   <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js" integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/picturefill.js"></script>
   <script src="js/index.min.js"></script>
   
 </body>

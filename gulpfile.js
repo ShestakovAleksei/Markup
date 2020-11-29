@@ -14,7 +14,9 @@ const   gulp = require('gulp'),
         iconfont = require('gulp-iconfont'),
         iconfontCss = require('gulp-iconfont-css'),
         { dest } = require('vinyl-fs'),
-        criticalCss = require('gulp-critical-css');
+        criticalCss = require('gulp-critical-css'),
+        addSource = require('gulp-add-source-picture'),
+        sizeOf = require('image-size');
 
 //server
 // gulp.task('browser-sync', function() {
@@ -27,11 +29,17 @@ const   gulp = require('gulp'),
 
 
 gulp.task('html', function () {
-    return  gulp.src('src/**/*.html')
+    return  gulp.src('src/index.html')
             .pipe(fileInclude())
             .pipe(dest('build'))
-            // .pipe(browserSync.reload({stream: true}));
+            .pipe(addSource('build/img'))
+            .pipe(dest('build'));
 });
+
+// using gulp-add-source-picture
+// <picture>
+//     <img src="../images/image.jpg" alt="example">
+// </picture>
 
 gulp.task('css', function() {
     return  gulp.src('src/styles/**/*.scss')
