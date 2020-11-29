@@ -10,19 +10,20 @@ const   gulp = require('gulp'),
         ttf2woff = require('gulp-ttf2woff'),
         ttf2woff2 = require('gulp-ttf2woff2'),
         uglifyEs = require('gulp-uglify-es').default,
-        browserSync = require('browser-sync'),
+        // browserSync = require('browser-sync'),
         iconfont = require('gulp-iconfont'),
         iconfontCss = require('gulp-iconfont-css'),
-        { dest } = require('vinyl-fs');
+        { dest } = require('vinyl-fs'),
+        criticalCss = require('gulp-critical-css');
 
 //server
-gulp.task('browser-sync', function() {
-    browserSync.init({
-        server: {
-            baseDir: 'build'
-        }
-    });
-});
+// gulp.task('browser-sync', function() {
+//     browserSync.init({
+//         server: {
+//             baseDir: 'build'
+//         }
+//     });
+// });
 
 
 gulp.task('html', function () {
@@ -52,7 +53,8 @@ gulp.task('css', function() {
                 })
             )
             .pipe(dest('build/styles'))
-            // .pipe(browserSync.reload({stream: true}));
+            .pipe(criticalCss())
+            .pipe(dest('build/styles'))
 });
 
 gulp.task('js', function() {
@@ -117,14 +119,6 @@ gulp.task('fonts', async function() {
             }))
             .pipe(dest('build/fonts'));
 });
-
-// gulp.task('otf2ttf', function () {
-//     return gulp.src('src/assets/fonts/*.otf')
-//         .pipe(fonter({
-//             formats: ['ttf']
-//         }))
-//         .pipe(dest('src/assets/fonts/'));
-// });
 
 // gulp.task('watchFiles', function(params) {
 //     gulp.watch('src/**/*.html').on('change', gulp.parallel(browserSync.reload, watch));
